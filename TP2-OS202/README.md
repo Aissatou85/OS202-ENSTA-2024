@@ -86,6 +86,10 @@ La loi d'Amdhal stipule que: soit ts le temps nécessaire pour exécuter le code
 
 $S(n) = ts/((f.ts)+((1-f)ts/n)) = n/(1+ (n-1)f) = 1/f$ si n tend vers l'infini.
 
+Alors, $S(n) = 1/f = 1/0,1 = 10$ pour un grand nombre d'unités de calcul.
+
+
+
 
 
 
