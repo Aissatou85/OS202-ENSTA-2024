@@ -6,7 +6,7 @@
 
 Le code donné pour l'interblocage dans le cours est : 
 
-*MPI_Comm_rank(comm, &myRank ) ;
+MPI_Comm_rank(comm, &myRank ) ;
 
 
 if (myRank == 0 )
@@ -53,7 +53,7 @@ MPI_Recv( recvbuf2, count, MPI_INT, MPI_ANY_SOURCE, tag, comm,
 &status );
 
 
-}*
+}
 
 
 
@@ -80,6 +80,12 @@ La probabilité d'avoir un interblocage est **p=1/2**
 
 
 ## **Exercice 2: Question du cours 2**
+
+Utilisons la loi d'Amdhal pour prédire l'accélération maximale que peut obtenir Alice avec son code:
+La loi d'Amdhal stipule que: soit ts le temps nécessaire pour exécuter le code séquentiellement, f la fraction de ts ne pouvant pas etre parallélisée et n le nombre d'unités de calcul alors :
+
+$S(n) = ts/((f.ts)+((1-f)ts/n)) = n/(1+ (n-1)f) = 1/f$ si n tend vers l'infini.
+
 
 
 
