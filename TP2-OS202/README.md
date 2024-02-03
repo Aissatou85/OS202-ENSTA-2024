@@ -88,10 +88,25 @@ $S(n) = ts/((f.ts)+((1-f)ts/n)) = n/(1+ (n-1)f) = 1/f$ si n tend vers l'infini.
 
 Alors, $S(n) = 1/f = 1/0,1 = 10$ pour un grand nombre d'unités de calcul.
 
+Pour ne pas trop gaspiller de ressources CPU, il est important de trouver un équilibre. Si n est trop grand, il y aura des coûts liés à la communication entre les différents noeuds de calculs et à la coordination des tâches, ce qui va entraîner la diminution de l'éfficacite de la parallélisation.
 
 
+En doublant la quantité de données à traiter et en supposant la complexité de l'algorithme  parallèle linéaire, utilisons la loi de Gustafson pour déterminer l'accélération maximale qu'Alice peut espérer avoir:
+
+La loi de Gustafson stipule que :
+$S(n) = ts + n.tp /(ts+tp) = n+ (1-n)ts/(ts+tp) = n+ (1-n).ts$
+
+Si Alice double la quantité de données à traiter, la nouvelle accélération maximale serait :
+ $S(n) = 2n + (1-2n).ts$
 
 
+ ## Exercice 3 : Ensemble de mandelbrot
+
+1. 
+
+ 
+
+ 
 
 
 
