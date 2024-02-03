@@ -1,6 +1,8 @@
-#**TRAVAUX PRATIQUES 2 OS202 2024:**
+# **TRAVAUX PRATIQUES 2 OS202 2024:**
 
-##**Exercie 1: Questions du cours**
+
+## **Exercie 1: Questions du cours**
+
 
 Le code donné pour l'interblocage dans le cours est : 
 
@@ -23,7 +25,11 @@ MPI_Recv( recvbuf2, count, MPI_INT, MPI_ANY_SOURCE, tag, comm,
 &status );
 }*
 
-###Scénario 1: Sans interblocage
+
+
+### Scénario 1: Sans interblocage
+
+
 -Le processus 0 envoie un message au processus 2;
 -Le processus 2 reçoit le message du processus 0;
 -Le processus 2 envoie un message au processus 0;
@@ -31,7 +37,9 @@ MPI_Recv( recvbuf2, count, MPI_INT, MPI_ANY_SOURCE, tag, comm,
 -Le processus 1 envoie un message au processus 2;
 -Le processus 2 reçoit le message du processus 1;
 
-###Scénario 2: Avec interblocage 
+### Scénario 2: Avec interblocage 
+
+
 -Le processus 0 envoie un message au processus 2;
 -Le processus 1 envoie un message au processus 2;
 -Le processus 0 est bloqué car il attent la réception du message du processus 2;
@@ -39,7 +47,9 @@ MPI_Recv( recvbuf2, count, MPI_INT, MPI_ANY_SOURCE, tag, comm,
 
 La probabilité d'avoir un interblocage est **p=1/2**
 
-##**Exercice 2: Question du cours 2**
+
+
+## **Exercice 2: Question du cours 2**
 
 
 
