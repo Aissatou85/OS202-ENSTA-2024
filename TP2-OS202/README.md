@@ -135,6 +135,10 @@ Les résultats obtenus en tenant compte des notations utilisées dans la questio
  
 ## Exercice 4: Produit matrice-vecteur
 
+1. Le code s'appelle **matvec_para_col.py**
+
+2. Le code s'appelle **matvec_para_lig.py**
+
 
 
 
