@@ -133,6 +133,8 @@ Les résultats obtenus en tenant compte des notations utilisées dans la questio
  De façon analogue à la première question, on constate que lorsqu'on augmente le nombre de tâches, le temps d'exécution parallèle diminue et le speedup augmente. Mais, ces diminutions ne sont que très faibles.
 
  
+## Exercice 4: Produit matrice-vecteur
+
 
 
 
