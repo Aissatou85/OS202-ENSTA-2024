@@ -103,10 +103,16 @@ Si Alice double la quantité de données à traiter, la nouvelle accélération 
  ## Exercice 3 : Ensemble de mandelbrot
 
 1. Le code s'appelle mandelbrot_para.cpp
-   | Tables | Are | Cool | |----------
-   |:-------------:|------:| | col 1 is|
-    left-aligned | $1600 |
 
+Je n'ai pas pu tester pour un nombre de tâches qui n'est pas un diviseur de 1024 car la fonction MPI Gather ne permet pas d'envoyer des tableaux qui n'ont pas la meme taille.
+
+Soit tp= temps d'exécution parallèle et ts=temps d'exécution sequentielle 
+
+* Pour nbp = 1, tp = 2.900 et ts = 0.018 d'où le speedup = ts/tp = 6.207x 10^-3
+* Pour nbp = 2, tp = 1.527 et ts = 0.017 d'où speedup = 0,011
+* Pour nbp = 4, tp = 1.132 et ts = 0.034 d'où speedup = 0,030
+
+  
  
 
  
