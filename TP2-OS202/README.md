@@ -116,9 +116,9 @@ Soit tp= temps d'exécution parallèle et ts=temps d'exécution sequentielle
 On constate que lorsqu'on augmente le nombre de tâches, le temps d'exécution parallèle diminue et le speedup augmente. Mais, ces diminutions ne sont que très faibles. On peut donc conclure que l'application ne bénéficie pas pleinement de l'ajout de processeurs ce qui peut être causé par la partie séquentielle de l'algorithme ou des coûts de communication élevés entre les processeurs, qui limitent l'amélioration des performances parallèles.
 
 <picture>
- <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
- <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
- <img alt="YOUR-ALT-TEXT" src="YOUR-DEFAULT-IMAGE">
+ <source media="(prefers-color-scheme: dark)" srcset="TP2-OS202/evolution_speedup.png">
+ <source media="(prefers-color-scheme: light)" srcset="TP2-OS202/evolution_speedup.png">
+ <img alt="YOUR-ALT-TEXT" src="TP2-OS202/evolution_speedup.png">
 </picture>
 
 
