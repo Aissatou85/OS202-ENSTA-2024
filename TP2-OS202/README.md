@@ -2,7 +2,7 @@
 # **GUIDADO AISSATOU HAIRIYA GROUPE 2**
 
 
-## **Exercie 1: Questions du cours**
+## **Exercice 1: Questions du cours**
 
 
 Le code donné pour l'interblocage dans le cours est : 
