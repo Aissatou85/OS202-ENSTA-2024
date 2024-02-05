@@ -102,7 +102,10 @@ Si Alice double la quantité de données à traiter, la nouvelle accélération 
 
  ## Exercice 3 : Ensemble de mandelbrot
 
-1. 
+1. Le code s'appelle mandelbrot_para.cpp
+   | Tables | Are | Cool | |----------
+   |:-------------:|------:| | col 1 is|
+    left-aligned | $1600 |
 
  
 
