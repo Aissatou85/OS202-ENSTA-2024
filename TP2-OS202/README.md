@@ -115,15 +115,22 @@ Soit tp= temps d'exécution parallèle et ts=temps d'exécution sequentielle
 
 On constate que lorsqu'on augmente le nombre de tâches, le temps d'exécution parallèle diminue et le speedup augmente. Mais, ces diminutions ne sont que très faibles. On peut donc conclure que l'application ne bénéficie pas pleinement de l'ajout de processeurs ce qui peut être causé par la partie séquentielle de l'algorithme ou des coûts de communication élevés entre les processeurs, qui limitent l'amélioration des performances parallèles.
 
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="TP2-OS202/evolution_speedup.png">
- <source media="(prefers-color-scheme: light)" srcset="TP2-OS202/evolution_speedup.png">
- <img alt="YOUR-ALT-TEXT" src="TP2-OS202/evolution_speedup.png">
-</picture>
+Le code pour générer la courbe est dans le fichier "courbe.py" et vous pouvez consulter la courbe, c'est l'image "evolution_speedup".
 
 
+ 2. Mettons en oeuvre une stratégie maitre-esclave pour distribuer les différentes lignes de l'image:
 
- 2. 
+La programmation maître-esclave (ou modèle maître-esclave) est un modèle de programmation parallèle où un processus principal, appelé le maître, coordonne l'exécution en répartissant des tâches entre lui-même et des processus esclaves. Dans notre cas, le maître distribue les portions d'images à traiter par chaque processeur et ensuite il va se charger de restituer l'image.
+Le code pour cette partie s'appelle "maitre_esclaves.py".
+
+Les résultats obtenus en tenant compte des notations utilisées dans la question précédente sont :
+
+* Pour nbp = 2, tp = 2.956 et ts = 0.050 d'où speedup = 0.017
+* Pour nbp = 4, tp = 1.576  et ts = 0.061 d'où speedup = 0.039
+* Pour nbp = 8, tp = 1.168 et ts = 0.065 d'où speedup = 0.056
+
+
+ De façon analogue à la première question, on constate que lorsqu'on augmente le nombre de tâches, le temps d'exécution parallèle diminue et le speedup augmente. Mais, ces diminutions ne sont que très faibles.
 
  
 
