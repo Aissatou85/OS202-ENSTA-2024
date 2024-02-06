@@ -1,6 +1,6 @@
 # **TP3 OS202 2024**
 
-# **GUIDADO AISSATOU HAIRIYA GROUPE 2*
+# **GUIDADO AISSATOU HAIRIYA GROUPE 2**
 
 Implémentons l'algorithme du bucket_sort en python comme suit :
 
