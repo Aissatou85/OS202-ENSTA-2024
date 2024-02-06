@@ -18,15 +18,14 @@ end_col = start_col + Nloc
 
 # Initialisation de la matrice locale A pour chaque tâche
 A_local = np.array([[(i+j) % dim+1. for j in range(start_col, end_col)] for i in range(dim)])
-A_local = A_local.T
-u = np.array([i+1. for i in range(dim)])
+u = np.array([start_col+i+1. for i in range(Nloc)])
 
 # Produit matrice-vecteur local
 v_local = A_local.dot(u)
 v_global = np.empty(dim, dtype=float)
 
-#On utilise Allgather car on veut que toutes les tâches disposent du résulat final
-comm.Allgather(v_local, v_global)
+#On utilise Allreduce car on veut que toutes les tâches disposent du résulat final
+comm.Allreduce(v_local, v_global, op=MPI.SUM)
 
 print(f"Matrice A (Tache {rank}):\n{A_local}")
 print(f"Vecteur u (Tache {rank}): {u}")
